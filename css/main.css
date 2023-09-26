@@ -49,8 +49,9 @@ header {
   background-repeat: no-repeat;
 }
 
-.game-header {
+#game-header {
   background-image: url(../assets/Illustrations/Batgame_1.png);
+  background-size: 100%;
 }
 
 header > div {
@@ -97,12 +98,21 @@ header #hero {
   justify-content: center;
 }
 
+header .game-hero {
+  width: 100%;
+  display: block !important;
+}
+
 header #hero > div {
   max-width: 40vw;
   padding-bottom: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header .game-hero > div {
+  max-width: 100% !important;
 }
 
 header #hero > div > p {
@@ -117,7 +127,12 @@ header #hero > div > span {
   margin-bottom: 1.5rem;
 }
 
-header #hero .game-hero {
+header .game-hero > div span {
+  margin-top: 15rem;
+  margin-left: 5rem;
+  align-self: start;
+  width: 20%;
+  font-size: 25px !important;
   text-transform: uppercase;
 }
 
@@ -566,6 +581,44 @@ main #contact .form .confirm-btn {
 main #contact .form .confirm-btn:hover {
   background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
   color: #000000;
+}
+
+main #quizz {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #quizz > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5rem;
+}
+
+main #quizz h1 {
+  text-transform: uppercase;
+}
+
+main #quizz .img-1 {
+  width: 930px;
+  height: 522px;
+  background: url(../assets/Illustrations/Batgame_2.png);
+}
+
+main #quizz .start {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4009978992) 0%, rgba(137, 0, 8, 0.3953956583) 100%);
+  width: 12rem;
+  padding: 1rem 1.5rem;
+  font-family: "Rajdhani", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
