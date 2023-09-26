@@ -1,0 +1,571 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  outline: none;
+}
+
+body {
+  background: #000000;
+  font-size: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 36px;
+}
+
+.sous-titre {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 22px;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  background-image: url(../assets/Illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.game-header {
+  background-image: url(../assets/Illustrations/Batgame_1.png);
+}
+
+header > div {
+  border: solid 2px #BCBBBD;
+  height: 132px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #logo {
+  margin-left: 5rem;
+  width: 121px;
+  height: 41px;
+  background-image: url("../assets/Logos/logohome.png");
+  background-size: cover;
+  transition: filter 0.3s;
+}
+
+header #menu {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav h1 {
+  text-transform: uppercase;
+  margin-right: 5rem;
+}
+
+header #hero {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header #hero > div {
+  max-width: 40vw;
+  padding-bottom: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header #hero > div > p {
+  text-align: center;
+  font-size: 18px;
+  margin: 1.5rem;
+}
+
+header #hero > div > span {
+  font-weight: bolder;
+  font-size: 22px;
+  margin-bottom: 1.5rem;
+}
+
+header #hero .game-hero {
+  text-transform: uppercase;
+}
+
+header #hero .buttons {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  column-gap: 2rem;
+}
+
+header #hero .buttons > :nth-child(1) {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4009978992) 0%, rgba(137, 0, 8, 0.3953956583) 100%);
+  width: 10rem;
+  padding: 1rem 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+header #hero .buttons > :nth-child(2) {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.4009978992) 0%, rgba(137, 0, 8, 0.3953956583) 100%);
+  width: 10rem;
+  padding: 1rem 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+header #hero .buttons > :nth-child(1):hover, header #hero .buttons > :nth-child(2):hover {
+  background-image: linear-gradient(90deg, rgb(237, 222, 191) 0%, rgb(137, 0, 8) 100%);
+}
+
+header #hero .next {
+  width: 74px;
+  position: absolute;
+  height: 43px;
+  background-image: url(../assets/Logos/flèche_down_header.png);
+  top: 90vh;
+}
+
+main #cine {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #cine h1 {
+  text-transform: uppercase;
+}
+
+main #cine p {
+  margin-top: 1rem;
+  width: 90%;
+  text-align: justify;
+}
+
+main #cine .galerie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main #cine .galerie .card figure {
+  width: 304px;
+  height: 458px;
+  margin-top: 4rem;
+}
+
+main #cine .galerie .card .img-1 {
+  background-image: url(../assets/Illustrations/Bathome2.png);
+}
+
+main #cine .galerie .card .img-2 {
+  background-image: url(../assets/Illustrations/Bathome3.png);
+}
+
+main #cine .galerie .card .img-3 {
+  background-image: url(../assets/Illustrations/Bathome4.png);
+}
+
+main #cine .galerie .card h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main #cine .galerie .card p {
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+main #nemesis {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+main #nemesis h1 {
+  text-transform: uppercase;
+}
+
+main #nemesis p {
+  margin-top: 1rem;
+  width: 90%;
+  text-align: justify;
+}
+
+main #nemesis .galerie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main #nemesis .galerie .card figure {
+  width: 304px;
+  height: 458px;
+  margin-top: 4rem;
+}
+
+main #nemesis .galerie .card .img-4 {
+  background-image: url(../assets/Illustrations/Bathome5.png);
+}
+
+main #nemesis .galerie .card .img-5 {
+  background-image: url(../assets/Illustrations/Bathome6.png);
+}
+
+main #nemesis .galerie .card .img-6 {
+  background-image: url(../assets/Illustrations/Bathome7.png);
+}
+
+main #nemesis .galerie .card h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main #nemesis .galerie .card p {
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+main #allies {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #allies h1 {
+  text-transform: uppercase;
+}
+
+main #allies p {
+  margin-top: 1rem;
+  width: 90%;
+  text-align: justify;
+}
+
+main #allies .galerie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main #allies .galerie .card figure {
+  width: 304px;
+  height: 458px;
+  margin-top: 4rem;
+}
+
+main #allies .galerie .card .img-7 {
+  background-image: url(../assets/Illustrations/Bathome8.png);
+}
+
+main #allies .galerie .card .img-8 {
+  background-image: url(../assets/Illustrations/Bathome9.png);
+}
+
+main #allies .galerie .card .img-9 {
+  background-image: url(../assets/Illustrations/Bathome10.png);
+}
+
+main #allies .galerie .card h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main #allies .galerie .card p {
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+main #justice-league {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+}
+
+main #justice-league > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main #justice-league h1 {
+  text-transform: uppercase;
+}
+
+main #justice-league p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+main #justice-league .img-10 {
+  margin-top: 5rem;
+  position: absolute;
+  min-width: 100vw;
+  left: 0;
+  height: 641px;
+  background-image: url(../assets/Illustrations/Bathome11.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main #multimedia {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+  margin-top: 75vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main #multimedia h1 {
+  text-transform: uppercase;
+}
+
+main #multimedia > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10rem;
+  margin: 5rem 0;
+}
+
+main #multimedia > div .banner {
+  display: flex;
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
+  border-radius: 0 10px 10px 0;
+  height: 28vh;
+  overflow-y: hidden;
+}
+
+main #multimedia > div .banner-pic {
+  width: 30%;
+  background-image: url(../assets/Illustrations/Bathome_ba1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #multimedia > div .banner-content {
+  width: 70%;
+  overflow-y: auto;
+  padding: 1rem 1rem;
+}
+
+main #multimedia > div .banner-content .genre {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+main #multimedia > div .banner-content .title {
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+main #multimedia > div .banner-content .imdb {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+main #multimedia > div .banner-content .imdb span {
+  color: #F8F184;
+}
+
+main #multimedia > div .banner-content .desc {
+  font-size: 10px;
+}
+
+main #multimedia .trailer {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  background-color: red;
+}
+
+main #multimedia .trailer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+main #contact {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
+  padding: 5rem 5rem;
+}
+
+main #contact > div {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
+  min-width: 100vw;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: absolute;
+  left: 0;
+}
+
+main #contact > div .form {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+main #contact h1 {
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+main #contact .form label {
+  display: block;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+main #contact .form .input-data input, main #contact .form .news, main #contact .form .input-data textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 1.5rem;
+  padding-left: 0.2rem;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+main #contact .form .email input {
+  margin-bottom: 2rem;
+}
+
+main #contact .form .newsletter {
+  margin: 1rem 0;
+}
+
+main #contact .form .newsletter p {
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
+main #contact .form .newsletter input {
+  width: 15px;
+  height: 15px;
+}
+
+main #contact .form select {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  margin-bottom: 2rem;
+}
+
+main #contact .form select option {
+  background-color: #BCBBBD;
+  color: #000000;
+}
+
+main #contact .form .news-btn {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #contact .form .news-btn a {
+  text-decoration: none;
+  border: 2px solid #BCBBBD;
+  padding: 0.5rem 1.5rem;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+main #contact .form .news-btn a:hover {
+  background: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
+}
+
+main #contact .form .news {
+  font-size: 14px;
+}
+
+main #contact .form .message {
+  margin-top: 3rem !important;
+}
+
+main #contact .form .confirm {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+main #contact .form .confirm-btn {
+  border: none;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgb(237, 222, 191) 0%, rgb(137, 0, 8) 100%);
+  width: 10rem;
+  padding: 1rem 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+main #contact .form .confirm-btn:hover {
+  background-image: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
