@@ -92,6 +92,7 @@ header nav h1 {
 header #hero {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -172,6 +173,24 @@ header #hero .next {
   height: 43px;
   background-image: url(../assets/Logos/flèche_down_header.png);
   top: 90vh;
+}
+
+header #hero .side-scroll {
+  position: absolute;
+  right: -4.5%;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20%;
+}
+
+header #hero .side-scroll .socials {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 main #cine {
@@ -607,7 +626,7 @@ main #quizz h1 {
   text-transform: uppercase;
 }
 
-main #quizz .img-1 {
+main #quizz .box {
   width: 930px;
   height: 522px;
   background: url(../assets/Illustrations/Batgame_2.png);
