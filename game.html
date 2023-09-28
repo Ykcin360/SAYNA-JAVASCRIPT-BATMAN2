@@ -9,6 +9,7 @@
 
   <!-- Importation du css generer par sass -->
   <link rel="stylesheet" href="css/main.css">
+  <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -46,9 +47,26 @@
       <div>
         <h1>Connaissez vous bien le chevalier noir ?</h1>
         <div class="box">
-          <div class="QR"></div>
+          <div class="illustration"></div>
+          <div class="QR">
+            <p class="question"></p>
+            <div class="responses">
+              <div class="input-area">
+                <input type="checkbox" name="response-1" id="response-1">
+                <label for="response-1">Test response quizz.</label>
+              </div>
+              <div class="input-area">
+                <input type="checkbox" name="response-2" id="response-2">
+                <label for="response-2">Test response quizz.</label>
+              </div>
+              <div class="input-area">
+                <input type="checkbox" name="response-2" id="response-2">
+                <label for="response-3">Test response quizz.</label>
+              </div>
+            </div>
+          </div>
         </div>
-        <a class="start" href="">démarrer le quizz</a>
+        <button class="start">démarrer le quizz</button>
       </div>
     </section>
   </main>
