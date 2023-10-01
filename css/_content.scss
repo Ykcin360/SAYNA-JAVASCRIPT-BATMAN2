@@ -605,7 +605,7 @@ main #quizz > div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 5rem;
+  row-gap: 3rem;
 }
 
 main #quizz h1{
@@ -616,18 +616,58 @@ main #quizz .box {
   width: 930px;
   height: 522px;
   background: url(../assets/Illustrations/Batgame_2.png);
+  display: flex;
 }
+
+main #quizz .box .illustration {
+  width: 39%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align-self: center;
+}
+
+main #quizz .box .QR {
+  width: 59%;
+  height: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+main #quizz .box .QR .responses{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+main #quizz .box .QR .responses .input-area{
+  background-color: #757575;
+  padding: 1rem 0.5rem;
+  display: flex;
+
+}
+
+main #quizz .box .QR .responses input{
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+
 
 main #quizz .start{
   text-transform: uppercase;
-  background-image: $button-gradient-3-40;
+  background-image: $button-gradient-3-100;
   width: 12rem;
   padding: 1rem 1.5rem;
   font-family: $rajdhani;
 }
 
 main #quizz .start:hover {
-  background-image: $button-gradient-3-100;
+  background-image: $button-gradient-3-40;
 }
 
 //----------------------------------- FOOTER ------------------------------------------
