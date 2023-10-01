@@ -44,6 +44,169 @@ p {
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  header > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #logo {
+    margin-left: 0 !important;
+  }
+  header nav a {
+    margin-inline: 2rem;
+  }
+  header nav h1 {
+    margin: 0.5rem auto !important;
+  }
+  header #hero > div > p {
+    width: 100% !important;
+  }
+  header #hero .buttons {
+    flex-direction: column !important;
+    row-gap: 1rem;
+  }
+  header .side-scroll {
+    display: none !important;
+  }
+  main #cine {
+    height: auto !important;
+    align-items: center !important;
+  }
+  main #cine p {
+    width: 100% !important;
+  }
+  main #cine .galerie {
+    flex-direction: column !important;
+  }
+  main #cine .card {
+    margin-block: 2rem;
+  }
+  main #cine .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  main #nemesis {
+    height: auto !important;
+    align-items: center !important;
+  }
+  main #nemesis p {
+    width: 100% !important;
+  }
+  main #nemesis .galerie {
+    flex-direction: column !important;
+  }
+  main #nemesis .card {
+    margin-block: 2rem;
+  }
+  main #nemesis .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  main #allies {
+    height: auto !important;
+    align-items: center !important;
+  }
+  main #allies p {
+    width: 100% !important;
+  }
+  main #allies .galerie {
+    flex-direction: column !important;
+  }
+  main #allies .card {
+    margin-block: 2rem;
+  }
+  main #allies .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  main #justice-league p {
+    width: 100% !important;
+  }
+  main #multimedia > div {
+    column-gap: 1rem !important;
+  }
+  main #multimedia .prev img, main #multimedia .next img {
+    width: 20px !important;
+  }
+  main #multimedia > div .banner-pic {
+    width: 0% !important;
+  }
+  main #multimedia > div .banner-content {
+    width: 100% !important;
+  }
+  main #contact .form .news-btn {
+    flex-direction: column !important;
+    row-gap: 1rem;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.451);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 3;
+  transition: all 0.8s;
+}
+
+.modal > div {
+  background-image: linear-gradient(90deg, rgb(25, 23, 20) 0%, rgb(101, 54, 25) 100%);
+  z-index: 4;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  min-height: 50vh;
+  width: 50vw;
+  padding-block: 2rem;
+  padding-inline: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  border-radius: 20px;
+}
+
+.modal .modal-title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.modal .modal-text {
+  width: 70%;
+  height: 25%;
+  text-align: center;
+}
+
+.modal .modal-btn {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, rgb(171, 136, 96) 0%, rgb(155, 82, 18) 100%);
+  padding: 1rem 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  padding-inline: 5rem;
+  border: none;
+}
+
+.modal .modal-btn:hover {
+  background-image: linear-gradient(90deg, rgb(196, 196, 196) 0%, rgb(189, 113, 45) 100%);
+}
+
 header {
   background-image: url(../assets/Illustrations/Bathome1.png);
   background-size: cover;
@@ -57,7 +220,7 @@ header {
 
 header > div {
   border: solid 2px #BCBBBD;
-  height: 132px;
+  min-height: 132px;
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -198,7 +361,7 @@ main #cine {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -255,7 +418,7 @@ main #nemesis {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -313,7 +476,7 @@ main #allies {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -662,6 +825,12 @@ main #quizz .box .QR .responses .input-area {
   background-color: #757575;
   padding: 1rem 0.5rem;
   display: flex;
+  transition: box-shadow ease 0.8s;
+}
+
+main #quizz .box .QR .responses .input-area:hover {
+  box-shadow: 2px 2px 2px 1px rgba(234, 164, 73, 0.7294117647);
+  transition: ease 0.5s;
 }
 
 main #quizz .box .QR .responses input {
@@ -686,7 +855,7 @@ footer > div {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
   padding: 5rem 5rem;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

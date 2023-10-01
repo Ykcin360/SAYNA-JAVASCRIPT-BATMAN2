@@ -1,3 +1,59 @@
+.modal{
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.451);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 3;
+  transition: all 0.8s;
+}
+
+.modal > div{
+  background-image: $button-gradient-5-100;
+  z-index: 4;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  min-height: 50vh;
+  width: 50vw;
+  padding-block: 2rem;
+  padding-inline: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  border-radius: 20px;
+}
+
+.modal .modal-title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: $space-grotesk;
+}
+
+.modal .modal-text {
+  width: 70%;
+  height: 25%;
+  text-align: center;
+}
+
+.modal .modal-btn {
+  text-decoration: none;
+  background-image: $button-gradient-4-100;
+  padding: 1rem 1.5rem;
+  font-family: $rajdhani;
+  text-transform: uppercase;
+  padding-inline: 5rem;
+  border: none;
+}
+
+.modal .modal-btn:hover {
+  background-image: $button-gradient-3-100;
+}
+
 header{
   background-image: url(../assets/Illustrations/Bathome1.png);
   background-size: cover;
@@ -12,7 +68,7 @@ header{
 header > div{
   border: solid 2px $body-line;
   // --------------------------
-  height: 132px;
+  min-height: 132px;
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -159,7 +215,7 @@ main #cine{
 
   // --------------------------
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -220,7 +276,7 @@ main #nemesis{
 
   // --------------------------
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -282,7 +338,7 @@ main #allies{
 
   // --------------------------
   padding: 5rem 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -647,7 +703,12 @@ main #quizz .box .QR .responses .input-area{
   background-color: #757575;
   padding: 1rem 0.5rem;
   display: flex;
+  transition: box-shadow ease 0.8s;
+}
 
+main #quizz .box .QR .responses .input-area:hover{
+  box-shadow: 2px 2px 2px 1px #eaa449ba;
+  transition: ease 0.5s;
 }
 
 main #quizz .box .QR .responses input{
@@ -678,7 +739,7 @@ footer > div{
 
   // --------------------------
   padding: 5rem 5rem;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

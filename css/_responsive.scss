@@ -1,0 +1,135 @@
+@media screen and (max-width: 768px){
+  header > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header #logo{
+    margin-left: 0 !important;
+  }
+  header nav a{
+    margin-inline: 2rem;
+  }
+
+  header nav h1 {
+    margin: 0.5rem auto !important;
+  }
+
+  header #hero > div > p {
+    width: 100% !important;
+  }
+
+  header #hero .buttons{
+    flex-direction: column !important;
+    row-gap: 1rem;
+  }
+
+  header .side-scroll{
+    display: none !important;
+  }
+
+  // ------ CINE ------
+  main #cine {
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  main #cine p {
+    width: 100% !important;
+  }
+
+  main #cine .galerie {
+    flex-direction: column !important;
+  }
+
+  main #cine .card{
+    margin-block: 2rem;
+  }
+
+  main #cine .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  // ------ NEMESIS ------
+  main #nemesis {
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  main #nemesis p {
+    width: 100% !important;
+  }
+
+  main #nemesis .galerie {
+    flex-direction: column !important;
+  }
+
+  main #nemesis .card{
+    margin-block: 2rem;
+  }
+
+  main #nemesis .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  // ------ ALLIES ------
+  main #allies {
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  main #allies p {
+    width: 100% !important;
+  }
+
+  main #allies .galerie {
+    flex-direction: column !important;
+  }
+
+  main #allies .card{
+    margin-block: 2rem;
+  }
+
+  main #allies .card > figure {
+    margin: 0 auto !important;
+    width: 90% !important;
+    min-height: 250px !important;
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+  }
+  // ------- JUSTICE ---------
+  main #justice-league p {
+    width: 100% !important;
+  }
+  // ------- MULTIMEDIA --------
+  main #multimedia > div {
+    column-gap: 1rem !important;
+  }
+  main #multimedia .prev img, main #multimedia .next img{
+    width: 20px !important;
+  }
+  main #multimedia .banner{
+    // width: 50vw !important;
+  }
+  main #multimedia > div .banner-pic{
+    width: 0% !important;
+  }
+  main #multimedia > div .banner-content{
+    width: 100% !important;
+  }
+
+  main #contact .form .news-btn{
+    flex-direction: column !important;
+    row-gap: 1rem;
+  }
+}
