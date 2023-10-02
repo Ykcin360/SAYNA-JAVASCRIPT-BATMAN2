@@ -19,11 +19,6 @@ body {
   z-index: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 h1 {
   font-family: "Rajdhani", sans-serif;
   font-size: 36px;
@@ -220,6 +215,7 @@ header {
 
 header > div {
   border: solid 2px #BCBBBD;
+  margin-inline: 10%;
   min-height: 132px;
   padding-top: 50px;
   display: flex;
@@ -256,6 +252,7 @@ header nav h1 {
 header #hero {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  margin-inline: 10%;
   position: relative;
   height: 100vh;
   display: flex;
@@ -336,18 +333,20 @@ header #hero .next {
   position: absolute;
   height: 43px;
   background-image: url(../assets/Logos/flèche_down_header.png);
-  top: 90vh;
+  top: 70vh;
 }
 
 header #hero .side-scroll {
-  position: absolute;
-  right: -4.5%;
-  top: 20vh;
+  position: fixed;
   display: flex;
+  right: 0;
+  top: 40vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 20%;
+  z-index: 2;
+  padding: 0;
 }
 
 header #hero .side-scroll .socials {
@@ -360,6 +359,7 @@ header #hero .side-scroll .socials {
 main #cine {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  margin-inline: 10%;
   padding: 5rem 5rem;
   min-height: 100vh;
   display: flex;
@@ -389,6 +389,11 @@ main #cine .galerie .card figure {
   width: 304px;
   height: 458px;
   margin-top: 4rem;
+  transition: transform 0.8s;
+}
+
+main #cine .galerie .card figure:hover {
+  transform: scale(1.1);
 }
 
 main #cine .galerie .card .img-1 {
@@ -417,6 +422,7 @@ main #cine .galerie .card p {
 main #nemesis {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  margin-inline: 10%;
   padding: 5rem 5rem;
   min-height: 100vh;
   display: flex;
@@ -447,6 +453,11 @@ main #nemesis .galerie .card figure {
   width: 304px;
   height: 458px;
   margin-top: 4rem;
+  transition: transform 0.8s;
+}
+
+main #nemesis .galerie .card figure:hover {
+  transform: scale(1.1);
 }
 
 main #nemesis .galerie .card .img-4 {
@@ -475,6 +486,7 @@ main #nemesis .galerie .card p {
 main #allies {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  margin-inline: 10%;
   padding: 5rem 5rem;
   min-height: 100vh;
   display: flex;
@@ -504,6 +516,11 @@ main #allies .galerie .card figure {
   width: 304px;
   height: 458px;
   margin-top: 4rem;
+  transition: transform 0.8s;
+}
+
+main #allies .galerie .card figure:hover {
+  transform: scale(1.1);
 }
 
 main #allies .galerie .card .img-7 {
@@ -530,42 +547,50 @@ main #allies .galerie .card p {
 }
 
 main #justice-league {
-  border-left: solid 2px #BCBBBD;
-  border-right: solid 2px #BCBBBD;
-  padding: 5rem 5rem;
+  padding-inline: 10%;
 }
 
-main #justice-league > div {
-  width: 90%;
-  margin: 0 auto;
+main #justice-league > div:nth-child(1) {
+  border-left: solid 2px #BCBBBD;
+  border-right: solid 2px #BCBBBD;
 }
 
 main #justice-league h1 {
   text-transform: uppercase;
+  padding-top: 5rem;
+  padding-inline: 5rem;
 }
 
 main #justice-league p {
   margin-top: 1rem;
+  width: 80%;
   text-align: justify;
+  padding-bottom: 5rem;
+  padding-inline: 5rem;
 }
 
 main #justice-league .img-10 {
-  margin-top: 5rem;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  min-width: 100vw;
   left: 0;
-  height: 641px;
+  width: 100%;
+  left: 0;
+  height: 700px;
   background-image: url(../assets/Illustrations/Bathome11.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 2;
 }
 
 main #multimedia {
   border-left: solid 2px #BCBBBD;
   border-right: solid 2px #BCBBBD;
+  margin-inline: 10%;
   padding: 5rem 5rem;
-  margin-top: 75vh;
+  margin-top: 81vh;
+  padding: 5rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -643,13 +668,10 @@ main #multimedia .trailer iframe {
 }
 
 main #contact {
-  border-left: solid 2px #BCBBBD;
-  border-right: solid 2px #BCBBBD;
-  padding: 5rem 5rem;
   margin-bottom: 90vh;
 }
 
-main #contact > div {
+main #contact > div:nth-child(1) {
   background: linear-gradient(90deg, rgba(237, 222, 191, 0.3897934174) 0%, rgba(25, 88, 125, 0.4037990196) 100%);
   min-width: 100vw;
   margin: 0 auto;
@@ -978,6 +1000,50 @@ footer .info .icon a:nth-child(6) {
   width: 24px;
   height: 24px;
   background: url(../assets/Logos/icon_tw.png);
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.to-right {
+  transform: translateX(0);
+}
+
+.from-right {
+  transform: translateX(20%);
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+
+.to-left {
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.zoom-in {
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.zoom {
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden, .to-right, .to-right {
+    transition: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
