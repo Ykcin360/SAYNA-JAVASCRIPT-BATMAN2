@@ -19,6 +19,16 @@ body {
   z-index: 0;
 }
 
+#batMouse {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 4rem;
+  z-index: 10;
+  opacity: 0.9;
+  filter: grayscale(100) drop-shadow(0 0 0.5rem #fff);
+}
+
 h1 {
   font-family: "Rajdhani", sans-serif;
   font-size: 36px;
@@ -198,6 +208,7 @@ p {
 
 .modal .modal-btn:hover {
   background-image: linear-gradient(90deg, rgb(196, 196, 196) 0%, rgb(189, 113, 45) 100%);
+  cursor: pointer;
 }
 
 header {
@@ -860,12 +871,17 @@ main #quizz .box .QR .responses .input-area {
 main #quizz .box .QR .responses .input-area:hover {
   box-shadow: 2px 2px 2px 1px rgba(234, 164, 73, 0.7294117647);
   transition: ease 0.5s;
+  cursor: pointer;
 }
 
 main #quizz .box .QR .responses input {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 1rem;
+}
+
+main #quizz .box .QR .responses :is(input, label):hover {
+  cursor: pointer;
 }
 
 main #quizz .start {
@@ -878,6 +894,7 @@ main #quizz .start {
 
 main #quizz .start:hover {
   background-image: linear-gradient(90deg, rgba(196, 196, 196, 0.4) 0%, rgba(189, 113, 45, 0.4) 100%);
+  cursor: pointer;
 }
 
 footer > div {

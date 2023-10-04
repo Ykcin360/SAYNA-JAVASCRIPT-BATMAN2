@@ -9,6 +9,7 @@
   letter-spacing: 0.1rem;
   color: $main-font-color;
   outline: none;
+  // cursor: none;
 }
 
 body{
@@ -17,6 +18,16 @@ body{
   box-sizing: border-box;
   overflow-x: hidden;
   z-index: 0;
+}
+
+#batMouse{
+  position:absolute;
+  left: 50%;
+  display:block;
+  width: 4rem;
+  z-index:10;
+  opacity: 0.9;
+  filter: grayscale(100) drop-shadow(0 0 0.5rem #fff);
 }
 
 // .container{

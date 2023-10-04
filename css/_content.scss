@@ -53,6 +53,7 @@
 
 .modal .modal-btn:hover {
   background-image: $button-gradient-3-100;
+  cursor: pointer;
 }
 
 header{
@@ -749,6 +750,7 @@ main #quizz .box .QR .responses .input-area{
 main #quizz .box .QR .responses .input-area:hover{
   box-shadow: 2px 2px 2px 1px #eaa449ba;
   transition: ease 0.5s;
+  cursor: pointer;
 }
 
 main #quizz .box .QR .responses input{
@@ -757,7 +759,9 @@ main #quizz .box .QR .responses input{
   margin-right: 1rem;
 }
 
-
+main #quizz .box .QR .responses :is(input, label):hover{
+  cursor: pointer;
+}
 
 main #quizz .start{
   text-transform: uppercase;
@@ -769,6 +773,7 @@ main #quizz .start{
 
 main #quizz .start:hover {
   background-image: $button-gradient-3-40;
+  cursor: pointer;
 }
 
 //----------------------------------- FOOTER ------------------------------------------
