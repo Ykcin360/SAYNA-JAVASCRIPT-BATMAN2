@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="modal">
+  <div class="modal zoom-in">
     <div>
       <h1 class="modal-title">01/12 grand titre</h1>
       <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iure iste quaerat cumque ipsam
@@ -35,11 +35,11 @@
       </nav>
     </div>
     <section class="container game-hero" id="hero">
-      <div>
-        <span>Let’s play a little game...</span>
+      <div class="hidden">
+        <span class="from-left">Let’s play a little game...</span>
         <a class="next" href="#quizz"></a>
       </div>
-      <div class="side-scroll">
+      <div class="side-scroll hidden">
         <a class="scroll-up" href="#game-header"><img src="assets/Logos/logo_bat_flèche.png" alt=""></a>
         <span class="socials">
           <a href="#"><img src="assets/Logos/icon_facebook.png" alt=""></a>
@@ -52,7 +52,7 @@
   </header>
   <main class="container">
     <section id="quizz">
-      <div>
+      <div class="hidden">
         <h1 class="q-title">Connaissez vous bien le chevalier noir ?</h1>
         <div class="box">
           <div class="illustration"></div>
@@ -99,6 +99,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="animation.js" defer></script>
 </body>
 
 </html>

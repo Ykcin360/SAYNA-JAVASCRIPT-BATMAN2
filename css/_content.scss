@@ -18,7 +18,7 @@
   min-height: 50vh;
   width: 50vw;
   padding-block: 2rem;
-  padding-inline: 0.5rem;
+  padding-inline: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@
   text-decoration: underline;
   text-transform: uppercase;
   font-family: $space-grotesk;
+  text-align: center;
 }
 
 .modal .modal-text {
@@ -84,6 +85,10 @@ header #logo {
   transition: filter 0.3s; 
 }
 
+header #logo:hover {
+  filter: drop-shadow(0px 5px 5px $icon-hover);
+}
+
 header #menu {
   display: flex;
   flex-direction: row;
@@ -93,8 +98,9 @@ header nav a {
   text-decoration: none;
 }
 
-header nav a:hover {
+header nav h1:hover  {
   text-decoration: underline;
+  color: $icon-hover;
 }
 
 header nav h1 {
@@ -115,8 +121,9 @@ header #hero {
 }
 
 header .game-hero {
-  width: 100%;
+  // width: 100%;
   display: block !important;
+  border-right: solid 2px $body-line;
 }
 
 header #hero > div {
@@ -209,6 +216,11 @@ header #hero .side-scroll .socials {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+}
+
+header #hero .side-scroll :is(.scroll-up, .scroll-down, a):hover{
+  filter: drop-shadow(0px 5px 5px $icon-hover);
+  transition: filter 0.8s;
 }
 
 //----------------------------------- CINE ------------------------------------------
@@ -431,7 +443,7 @@ main #justice-league h1{
 
 main #justice-league p {
   margin-top: 1rem;
-  width: 80%;
+  // width: 80%;
   text-align: justify;
   padding-bottom: 5rem;
   padding-inline: 5rem;
